@@ -1,0 +1,89 @@
+<html>
+<head>
+	<title>Form with fieldsets</title>
+	<style>
+		fieldset
+		{
+			border:3px solid red;
+			padding-left:300px;
+			border-radius: 50px;
+			margin:20px;
+
+		}
+		legend
+		{
+			background-color:gold;
+			padding:5px;
+			margin:5;
+
+			border-radius:10px;
+
+			
+		}
+	</style>
+
+</head>
+<body>
+	<h1>Form With Fieldsets</h1>
+	<form>
+		<fieldset>
+		<legend>Login Details</legend>
+		<p>
+			<label for="user_name">Username</label><br>
+			<input type="text" name="user_name" id="user_name">
+		</p>
+		<p>
+			<label for="email_id">Email ID</label><br>
+			<input type="email" name="email_id" id="email_id" required>
+		</p>
+		<p>
+			<label for="pw">Password</label><br>
+			<input type="password" id="pw" name="pw">
+		</p>
+	    </fieldset>
+	    <fieldset>
+	    <legend> Contact Details</legend>
+	    <p>
+	    	<label for="door_no">Door NO</label><br>
+			<input type="text" name="door_no" id="door_no">
+		</p>
+		<p>
+			<label for="street">Street</label><br>
+			<input type="text" name="street" id="street">
+		</p>
+		<p>
+			<label for="area">Area</label><br>
+			<input type="text" id="area" name="area">
+		</p>
+		<p>
+			<label for="country">Country</label><br>
+			<input type="text" name="country" id="country">
+		</p>
+		<p>
+			<label for="state">State</label><br>
+			<input type="text" id="state" name="state">
+		</p>
+	    </fieldset>
+		<fieldset>
+		<legend> Education Details </legend>
+		<p>
+			<label for="qualification">qualify</label><br>
+			<input type="text" name="qualification" id="qualification">
+		</p>		
+
+		<p>
+			<label for="school">school name</label><br>
+			<input type="text" id="school" name="school">
+		</p>
+		<p>
+			<label for="college">College name</label><br>
+			<input type="text" name="college" id="college">
+		</p>
+		<p><br>
+            <input type="submit" name="login-button" value="send">
+      	</p>
+	    </fieldset>
+	</form>
+
+</body>
+</html>

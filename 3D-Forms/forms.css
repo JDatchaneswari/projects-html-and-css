@@ -1,0 +1,114 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 72.5%;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(206, 174, 174, 0.173), rgba(0, 0, 0, 0.141)), url(images/bg-img.webp) center no-repeat;
+    background-size: cover;
+    perspective: 100rem;
+}
+.forms-wrapper {
+    align-items: center;
+    position: absolute;
+    top:calc(50% -17.5rem);
+    left:calc(50% -25rem);
+    transform-style: preserve-3d;
+    transition: transform 0.5s,left 0.5s;
+}
+
+.forms-wrapper form {
+    position:absolute;
+    top:300px;
+    left:300px;  
+    bottom:40px;
+    width: 40rem;
+    height: 30rem; 
+    margin: auto;
+    background-color: rgba(40, 114, 108, 0.406);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0.1rem 0.1rem 0.1rem #ccc inset, -0.1rem -0.1rem 0.1rem #ccc inset;
+}
+
+.signup-form {
+    transform:rotateY(270deg) translateZ(25rem) translateX(-25rem);
+}
+
+form a{
+    position: absolute;
+    top: 2rem; 
+    background-color: #fff;
+    color: rgba(40, 114, 108);
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    /*left: 2rem;
+    padding: 0.5rem 1rem 0.5rem 3rem;
+    border-radius: 100% 0.5rem 0.5rem 100%;*/
+}
+
+ form h2 {
+    font-size: 2.3rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.inputs-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-wrapper input {
+    width: 25rem;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    border-radius:5rem;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    letter-spacing: 0.1rem;
+    border:0.1rem solid #fff;
+}
+
+.inputs-wrapper input::placeholder{
+    color: #fff;
+    font-weight: 300;
+}
+
+.inputs-wrapper input[type="submit"] {
+    font-weight: 900;
+    background-color: #fff;
+    color: rgba(40, 114, 108);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.signup-btn {
+    left: 2rem;
+    padding: 0.5rem 1rem 0.5rem 3rem;
+    border-radius: 100% 0.5rem 0.5rem 100%;
+}
+
+.signin-btn {
+    right: 2rem;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius:0.5rem 100% 100% 0.5rem; 
+}
+
+
+
+

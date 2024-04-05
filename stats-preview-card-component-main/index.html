@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Stats preview card component</title>
+  <style>
+    *{
+      margin:0;
+      padding:0;
+    }
+    body{
+      background-color: hsl(233, 47%, 7%);
+    font-family: sans-serif;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  .card{
+    background-color: hsl(244, 38%, 16%);
+    position:absolute;
+    right:300px;
+    width:850px;
+    height: 350px;
+    display:flex;
+    margin:100px -80px;
+  }
+  .text{
+    width:1000px;
+  }
+  .shade{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    width:350px;
+    opacity:0.6;
+    object-fit: cover;
+    background-color:hsl(274, 64%, 61%);
+  }
+  .card-img{
+    
+    height:350px;
+    width:350px;
+  }
+  .head{
+    font-size:35px;
+    width:400px;
+    position:relative;
+    top:30px;
+    left:40px;
+    margin:15px;
+    color:hsl(0, 0%, 100%);
+  }
+  .para{
+    position:relative;
+    top:35px;
+    font-size:14px;
+    width:320px;
+    left:55px;
+    line-height:1.5;
+    color:hsl(0, 0%, 100%, 0.75);
+  }
+  .ratings{
+    position:relative;
+    top:80px;
+    left:52px;
+    display:flex;
+    color:hsl(0, 0%, 100%);
+    font-size:20px;
+  }
+  .t,.s,.r{
+    display:flex;
+    flex-direction: column;
+    gap:4px;
+  }
+  .ten{
+    font-weight:bold;
+  }
+  .rate{
+    display:flex;
+    gap:75px;
+  }
+  .tenn{
+    text-transform: uppercase;
+    display:flex;
+    flex-direction: column;
+    font-size:10px;
+    color:hsl(0, 0%, 100%, 0.6);
+  }
+  @media only screen (min-width:700px){
+    body{
+      background-color: hsl(233, 47%, 7%);
+      font-family:sans-serif;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  .card{
+    background-color: hsl(244, 38%, 16%);
+    position:absolute;
+    right:300px;
+    width:850px;
+    height: 350px;
+    display:flex;
+    flex-direction:column;
+    margin:50px;
+  }
+  .text{
+    width:1000px;
+  }
+  .shade{
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    width:350px;
+    opacity:0.6;
+    object-fit: cover;
+    background-color:hsl(274, 64%, 61%);
+  }
+  .card-img{
+    
+    height:350px;
+    width:350px;
+  }
+  .head{
+    font-size:35px;
+    width:400px;
+    position:relative;
+    top:30px;
+    left:40px;
+    margin:15px;
+    color:hsl(0, 0%, 100%);
+  }
+  .para{
+    position:relative;
+    top:35px;
+    font-size:14px;
+    width:320px;
+    left:55px;
+    line-height:1.5;
+    color:hsl(0, 0%, 100%, 0.75);
+  }
+  .ratings{
+    position:relative;
+    top:80px;
+    left:52px;
+    display:flex;
+    color:hsl(0, 0%, 100%);
+    font-size:20px;
+  }
+  .t,.s,.r{
+    display:flex;
+    flex-direction: column;
+    gap:4px;
+  }
+  .ten{
+    font-weight:bold;
+  }
+  .rate{
+    display:flex;
+    gap:75px;
+  }
+  .tenn{
+    text-transform: uppercase;
+    display:flex;
+    flex-direction: column;
+    font-size:10px;
+    color:hsl(0, 0%, 100%, 0.6);
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="text">
+      <h5 class="head">Get <b style="color:hsl(277, 64%, 61%);">insights</b> that help your business grow.</h5>
+      <p class="para">Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+      experience, and overall efficiency.</p>
+     <div class="ratings">
+      <div class="rate">
+        <div class="s">
+      <p class="ten">10k+</p>
+      <p class="tenn">Companies</p>
+      </div>
+      <div class="r">
+      <p class="ten">314</p>
+      <p class="tenn">templates</p>
+      </div>
+      <div class="t">
+      <p class="ten">12M+</p>
+      <p class="tenn">queries</p>
+      </div>
+      </div>
+    </div>
+    </div>
+    <div>
+      <img class="card-img" src="images/image-header-desktop.jpg">
+    </div>
+    <div class="shade"></div>
+  </div>
+
+</body>
+</html>
